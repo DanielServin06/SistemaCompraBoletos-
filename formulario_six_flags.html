@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de boletos</title>
+    <link rel="icon" href="">
+</head>
+<body>
+    <form action="./Dynamics/sistema_compra_boletos.php" method="post">
+        <fieldset>
+            <legend>Registro de compra de boletos Six Flags México</legend>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required><br><br>
+                <label for="apellidos">Apellidos: </label>
+                <input type="text" name="apellidos" id="apellidos" required><br><br>
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" id="edad" min="12" max="80"required><br><br>
+                <label for="dirección">Dirección: </label>
+                <input type="text" name="direccion"id="dirección" required><br><br>
+                <label for="boletos">¿Cuántos boletos desea comprar?</label>
+                <input type="number" name="boletos" id="boletos" min="1" max="15" required><br><br>
+                <label>Tipo de boleto: </label>
+                    <select name="tipo">
+                        <option>Común</option>
+                        <option>Flash pass</option>
+                        <option>Adventure pass</option>
+                        <option>Extreme pass</option>
+                        <option>Ultimate pass</option>
+                    </select>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>
